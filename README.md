@@ -1,5 +1,5 @@
 dotfiles
-########
+========
 
 Just my dotfiles, for personal use.
 
