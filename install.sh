@@ -2,4 +2,4 @@
 
 cd "$(dirname "${BASH_SOURCE}")"
 
-rsync --exclude ".git/" --exclude "install.sh" -av . ~
+rsync --exclude ".git/" --exclude "install.sh" --exclude "README.md" -av . ~
