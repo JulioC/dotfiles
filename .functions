@@ -1,0 +1,13 @@
+# Commands for SSH tunnels
+# Need "tunnel" host on ssh config
+TUNNEL_PORT=4477
+alias sshtunnel="ssh -vND $TUNNEL_PORT tunnel"
+function secure_chromium {
+  chromium --proxy-server="socks://localhost:$TUNNEL_PORT" &>/dev/null &
+  exit
+}
+
+# Home folder shortcut
+h() { cd ~/$1; }
+_h() { _files -W ~/ -/; }
+compdef _h h

@@ -1,0 +1,18 @@
+# Aliases for changing default behaviors
+alias diff='colordiff' # depends on colordiff package
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'
+alias more='less'
+alias mkdir='mkdir --parents --verbose'
+alias ping='ping -c 5'
+
+# Random aliases
+alias ..='cd ..'
+alias hist='history | grep $1' # find commands matching argument
+alias openports='netstat --all --numeric --programs --inet --inet6'
+
+# No need for sudo on these
+if [ $UID -ne 0 ]; then
+  alias reboot='sudo reboot'
+  alias halt='sudo halt'
+fi
