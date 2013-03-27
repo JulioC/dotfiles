@@ -5,6 +5,7 @@ alias ls='ls --color=auto'
 alias more='less'
 alias mkdir='mkdir --parents --verbose'
 alias ping='ping -c 5'
+alias git='hub' # depends on hub package
 
 # Random aliases
 alias ..='cd ..'
